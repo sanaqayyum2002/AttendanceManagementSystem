@@ -1,0 +1,60 @@
+body {
+    
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+            height: 100%;
+            margin: 0%;
+            padding: 0%;
+}
+
+h1{
+    text-align:center;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(7, 83, 165);
+}
+.panel1{
+    align-items: center;
+padding-top: 10%;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.panel-button1 {
+    padding: 40px 59px;
+    font-size: 25px;
+    color: white;
+    background-color:  rgb(7, 83, 165);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  transition: background-color 0.3s;
+}
+
+.panel-button2 {
+    padding: 40px 47px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(7, 83, 165);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.panel-button1:hover{
+    color: black;
+    
+}
+.panel-button2:hover{
+    color: black;
+    
+}
+
+

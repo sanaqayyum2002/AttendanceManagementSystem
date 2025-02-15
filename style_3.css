@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard-container {
+    background-color:burlywood;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #007bff;
+}
+
+.edit-pic-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.edit-pic-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.edit-pic {
+    display: none;
+}
+
+/* Button Section */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.action-button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.action-button:hover {
+    background-color: #218838;
+}
+
+/* Logs Section */
+.log-container {
+    margin-top: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}

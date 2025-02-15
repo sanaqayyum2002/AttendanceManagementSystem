@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style_4.css"> <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-panel-container">
+        <h2>Admin Panel</h2>
+        
+        <!-- Navigation -->
+        <nav>
+            <button id="view-records" class="nav-button">Manage Student Records</button>
+            <button id="add-attendance" class="nav-button">Add Attendance</button>
+            <button id="leave-approval" class="nav-button">Leave Requests</button>
+            <button id="generate-report" class="nav-button">Generate Report</button>
+            <button id="grading-system" class="nav-button">Grading System</button>
+            <button id="system-report" class="nav-button">Generate System Report</button>
+        </nav>
+
+        <!-- Student Records Section -->
+        <div id="records-section" class="section hidden">
+            <h3>Manage Student Records</h3>
+            <button id="add-student" class="action-button">Add Student</button>
+            <table id="records-table" class="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Attendance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        
+        <!-- Attendance Section -->
+        <div id="attendance-section" class="section hidden">
+            <h3>Add Attendance</h3>
+            <form id="attendance-form">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+                <label for="attendance-date">Date:</label>
+                <input type="date" id="attendance-date" name="attendance-date" required>
+                <button type="submit" id="submit-attendance" class="action-button">Add Attendance</button>
+            </form>
+        </div>
+        
+        <!-- Leave Requests Section -->
+        <div id="leave-section" class="section hidden">
+            <h3>Leave Requests</h3>
+            <table id="leave-table" class="data-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Reason</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        
+        <!-- Generate Report Section -->
+        <div id="report-section" class="section hidden">
+            <h3>Generate Report</h3>
+            <form id="report-form">
+                <label for="report-user">User:</label>
+                <input type="text" id="report-user" name="report-user" required>
+                <label for="report-from">From:</label>
+                <input type="date" id="report-from" name="report-from" required>
+                <label for="report-to">To:</label>
+                <input type="date" id="report-to" name="report-to" required>
+                <button type="submit" class="action-button">Generate Report</button>
+            </form>
+            <div id="report-output"></div>
+        </div>
+        
+        <!-- Grading System Section -->
+        <div id="grading-section" class="section hidden">
+            <h3>Grading System</h3>
+            <form id="grading-form">
+                <label for="grading-days">Days Attended:</label>
+                <input type="number" id="grading-days" name="grading-days" required>
+                <button type="submit" class="action-button">Set Grading</button>
+            </form>
+            <div id="grading-output"></div>
+        </div>
+        
+        <!-- System Report Section -->
+        <div id="system-report-section" class="section hidden">
+            <h3>Generate System Report</h3>
+            <form id="system-report-form">
+                <label for="system-report-from">From:</label>
+                <input type="date" id="system-report-from" name="system-report-from" required>
+                <label for="system-report-to">To:</label>
+                <input type="date" id="system-report-to" name="system-report-to" required>
+                <button type="submit" class="action-button">Generate System Report</button>
+            </form>
+            <div id="system-report-output"></div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="admin_script.js"></script>
+</body>
+</html>
